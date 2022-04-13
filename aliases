@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# Other aliases
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+#some custom aliases
+alias bat='bat  --color=always ' # --style=numbers,changes,header'
+alias c='gcc'
+alias cbr="cargo build --release"
+alias sci="sudo cargo install --root /usr/local/"
+alias cdr='cd;clear'
+alias chtsh='cht.sh'
+alias cp='cp -vr'
+alias cpp='g++'
+alias cr='clear'
+alias df='df -h'
+alias du='du --apparent-size -h'
+alias dust='dust -sp'
+alias fm='vifm'
+alias free='free -m'
+alias loc='loc | ccat'
+alias lpv='lolcat /proc/version'
+alias mkdir='mkdir -pv'
+alias mv='mv -vi'
+alias pdf='xdg-open'
+alias pwd='pwd -P'
+alias rm='rm -rfv'
+alias rmmuerp="rm .venv/lib64/python3.10/site-packages/MuERP-0.7.0.dist-info .venv/lib64/python3.10/site-packages/MuERP.pth .venv/lib64/python3.10/site-packages/_MuERP.py"
+alias sa='source $HOME/aliases/aliases'
+alias sdn='shutdown now'
+alias sh='dash'
+alias tail='tail -v'
+alias tar="tar -xvf"
+alias tokei='tokei | ccat'
+alias top="htop"
+alias tree='tree --si --du -ha '
+alias uname='uname -a | lolcat'
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
+alias wcl='wc -l'
+alias wcw='wc -w'
+alias wtf='wtfutil > /dev/null'
+alias tfetch='tfetch | lolcat -h 1 -v 1'
+alias prettier='npx prettier'
+alias p='python'
+
+source <(cat $HOME/aliases/*.sh)
