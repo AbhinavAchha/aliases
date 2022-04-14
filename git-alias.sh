@@ -140,3 +140,6 @@ alias gamc='git am --continue'
 alias gams='git am --skip'
 alias gama='git am --abort'
 alias gamscp='git am --show-current-patch'
+
+# github's gh aliases
+alias ghs='gh s | xargs -n1 gh browse -R'
