@@ -14,6 +14,6 @@ alias ....='cd ../../..'
 alias ,,='..'
 
 # File Aliases
-alias aliases='vim $HOME/scripts/aliases'
-alias vimrc='vim $HOME/scripts/init.lua'
+alias aliases='vim $HOME/aliases/aliases'
+alias vimrc='vim $HOME/neovim-config/init.lua'
 alias zshrc='vim $HOME/zsh/.zshrc'
