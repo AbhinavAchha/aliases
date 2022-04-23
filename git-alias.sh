@@ -1,4 +1,4 @@
-alias ga='git add'
+alias gaa='git add -A'
 alias gc='git clone'
 alias gcam='git commit -vam'
 alias gclean='git clean -xid'
@@ -17,6 +17,7 @@ alias gs='git switch -'
 alias gsa='git submodule add'
 alias gwa='git worktree add'
 alias gwr='git worktree remove'
+alias gf='git fetch'
 
 # Git aliases stolen from : https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 alias ggpur='ggu'
@@ -133,7 +134,6 @@ alias gupav='git pull --rebase --autostash -v'
 alias glum='git pull upstream $(git_main_branch)'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
-alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
 
 alias gam='git am'
 alias gamc='git am --continue'
