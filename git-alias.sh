@@ -163,9 +163,8 @@ alias gss='git status -s'
 alias gst='git status'
 
 # use the default stash push on git 2.13 and newer
-is-at-least 2.13 "$git_version" &&
-  alias gsta='git stash push' ||
-  alias gsta='git stash save'
+alias gsta='git stash push'
+alias gsta='git stash save'
 
 alias gstaa='git stash apply'
 alias gstc='git stash clear'
