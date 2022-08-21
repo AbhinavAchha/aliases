@@ -15,6 +15,9 @@ alias gwa='git worktree add'
 alias gwr='git worktree remove'
 alias gf='git fetch'
 
+# https://stackoverflow.com/a/32735879/14547900
+alias git-pull-all="find . -name .git -execdir git pull -v ';'"
+
 # Git aliases stolen from : https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 
 alias g='git'
@@ -50,12 +53,6 @@ alias gcas='git commit -a -s'
 alias gcasm='git commit -a -s -m'
 alias gcb='git checkout -b'
 alias gcf='git config --list'
-
-function gccd() {
-  command git clone --recurse-submodules "$@"
-  [[ -d "$_" ]] && cd "$_" || cd "${${_:t}%.git}"
-}
-# compdef _git gccd=git-clone
 
 alias gcl='git clone --recurse-submodules'
 alias gclean='git clean -id'
