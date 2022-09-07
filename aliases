@@ -10,7 +10,6 @@ alias egrep='egrep --color=auto'
 alias bat='bat  --color=always ' # --style=numbers,changes,header'
 alias c='gcc'
 alias cbr="cargo build --release"
-alias sci="sudo cargo install --root /usr/local/"
 alias cdr='cd;clear'
 alias chtsh='cht.sh'
 alias cp='cp -vr'
@@ -28,7 +27,6 @@ alias mv='mv -vi'
 alias pdf='xdg-open'
 alias pwd='pwd -P'
 alias rm='rm -rfv'
-alias rmmuerp="rm .venv/lib64/python3.10/site-packages/MuERP-0.7.0.dist-info .venv/lib64/python3.10/site-packages/MuERP.pth .venv/lib64/python3.10/site-packages/_MuERP.py"
 alias sa='source $HOME/aliases/aliases'
 alias sdn='shutdown now'
 alias sh='dash'
@@ -48,6 +46,7 @@ alias tfetch='tfetch | lolcat -h 1 -v 1'
 alias prettier='npx prettier'
 alias p='python'
 alias grm='go run ./main.go'
-alias gorun='go run ./cmd/muerp/*.go'
+alias gorun='go run ./cmd/muerp/main.go'
+alias start='pnpm start'
 
 source <(cat $HOME/aliases/*.sh)
