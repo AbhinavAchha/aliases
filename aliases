@@ -46,7 +46,7 @@ alias tfetch='tfetch | lolcat -h 1 -v 1'
 alias prettier='npx prettier'
 alias p='python'
 alias grm='go run ./main.go'
-alias gorun='go run ./cmd/muerp/main.go'
+alias gorun='reflex go run ./cmd/muerp/main.go --start-service'
 alias start='pnpm start'
 
 source <(cat $HOME/aliases/*.sh)

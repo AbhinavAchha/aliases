@@ -1,8 +1,7 @@
 # alias to be run with sudo only
 
 alias chown='sudo chown --changes'
-alias make='sudo make -j6'
-alias powertop='sudo powertop'
-alias bandwhich='sudo bandwhich'
-alias smi='sudo make install -j6'
+alias make='make -j6'
+alias smi='make install -j6'
 alias su='sudo su'
+alias build-neovim='make distclean;make deps;make CMAKE_BUILD_TYPE=Release;make install'
