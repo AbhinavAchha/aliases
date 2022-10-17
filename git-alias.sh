@@ -14,6 +14,7 @@ alias gsa='git submodule add'
 alias gwa='git worktree add'
 alias gwr='git worktree remove'
 alias gf='git fetch'
+alias gcom='cd $(git rev-parse --show-toplevel)/../main'
 
 # https://stackoverflow.com/a/32735879/14547900
 alias git-pull-all="find . -name .git -execdir git pull -v ';'"
@@ -117,7 +118,7 @@ alias gma='git merge --abort'
 
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
-alias gpr='git pull --rebase'
+alias gpr='git pull --no-rebase'
 alias gpu='git push upstream'
 alias gpv='git push -v'
 
@@ -197,3 +198,4 @@ alias gamscp='git am --show-current-patch'
 
 # github's gh aliases
 alias ghs='gh s | xargs -n1 gh browse -R'
+alias git-open-all='find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && gh browse > /dev/null" \;'
