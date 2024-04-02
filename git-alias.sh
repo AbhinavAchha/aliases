@@ -16,9 +16,6 @@ alias gwr='git worktree remove'
 alias gf='git fetch'
 alias gcom='cd $(git rev-parse --show-toplevel)/../main'
 
-# https://stackoverflow.com/a/32735879/14547900
-alias git-pull-all="find . -name .git -execdir git pull -v ';'"
-
 # Git aliases stolen from : https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 
 alias g='git'
